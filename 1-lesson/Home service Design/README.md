@@ -1,1 +1,1 @@
-React and Sass design
+React and Sass
