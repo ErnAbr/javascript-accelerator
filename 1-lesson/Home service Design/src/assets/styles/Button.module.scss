@@ -27,4 +27,16 @@
       cursor: pointer;
     }
   }
+  &.square {
+    height: 100px;
+    width: 100px;
+    margin: 15px;
+    background-color: #eeeaf4;
+    border: none;
+    border-radius: 5px;
+    &:hover {
+      background-color: #7b58efb4;
+      cursor: pointer;
+    }
+  }
 }

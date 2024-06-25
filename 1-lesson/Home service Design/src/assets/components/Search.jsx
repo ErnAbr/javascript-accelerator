@@ -32,7 +32,7 @@ export function Search() {
           onChange={handleSearchChange}
         />
         <Button buttonType="search" onClick={onClick}>
-          <IconContext.Provider value={{ color: "white", size: "0.5em", title: "Logoipsum" }}>
+          <IconContext.Provider value={{ color: "white", size: "0.5em" }}>
             <HiSearch />
           </IconContext.Provider>
         </Button>

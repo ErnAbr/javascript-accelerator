@@ -5,7 +5,13 @@ export function Button({ children, buttonType, onClick }) {
   return (
     <button
       className={`${styles.button} ${
-        buttonType === "primary" ? styles.primary : buttonType === "search" ? styles.search : ""
+        buttonType === "primary"
+          ? styles.primary
+          : buttonType === "search"
+          ? styles.search
+          : buttonType === "square"
+          ? styles.square
+          : ""
       }`}
       onClick={onClick}
     >
