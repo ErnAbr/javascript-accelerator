@@ -1,0 +1,43 @@
+.container {
+  background-color: #ffffffcc;
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  margin-top: 5px;
+  border-bottom: 1px ridge rgba(0, 0, 0, 0.096);
+}
+
+.leftSideStyles {
+  display: flex;
+  align-self: center;
+  margin-left: 5%;
+  span {
+    align-self: center;
+    font-weight: 900;
+    font-size: larger;
+    margin-right: 15px;
+  }
+}
+
+.rightSideStyles {
+  align-self: center;
+  margin-right: 10%;
+}
+
+.navStyles {
+  align-self: center;
+}
+
+.ulStyle {
+  display: flex;
+  list-style-type: none;
+  & li {
+    margin-left: 25px;
+    font-size: large;
+    font-weight: bolder;
+    &:hover {
+      cursor: pointer;
+      color: #bba4a4;
+    }
+  }
+}
