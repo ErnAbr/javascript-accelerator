@@ -1,14 +1,10 @@
-import { Topbar } from "./assets/components/Topbar";
-import { Search } from "./assets/components/Search";
-import "./assets/styles/Default.module.scss";
-import { Category } from "./assets/components/Category";
+import "./styles/Default.module.scss";
+import { Routes } from "./navigation/router";
 
 function App() {
   return (
     <>
-      <Topbar />
-      <Search />
-      <Category />
+      <Routes />
     </>
   );
 }
