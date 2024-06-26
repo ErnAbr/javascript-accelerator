@@ -13,7 +13,7 @@ const routes = [
   { path: "/about-us", element: <AboutUs /> },
   { path: "/login", element: <Login /> },
   { path: "/register", element: <Register /> },
-  { path: "/search-category", element: <SearchCategory /> },
+  { path: "/search/:category", element: <SearchCategory /> },
   { path: "/not-found", element: <NotFound /> },
   { path: "*", element: <Navigate replace to="/not-found" /> },
 ];
