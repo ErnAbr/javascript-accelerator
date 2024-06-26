@@ -4,6 +4,8 @@ import styles from "../styles/Topbar.module.scss";
 import { IconContext } from "react-icons";
 
 export function Topbar() {
+  const links = ["Home", "Services", "About Us"];
+
   return (
     <div className={styles.container}>
       <div className={styles.leftSideStyles}>
@@ -13,9 +15,9 @@ export function Topbar() {
         <span>Logoipsum</span>
         <nav className={styles.navStyles}>
           <ul className={styles.ulStyle}>
-            <li>Home</li>
-            <li>Services</li>
-            <li>About Us</li>
+            {links.map((link, index) => (
+              <li key={index}>{link}</li>
+            ))}
           </ul>
         </nav>
       </div>
