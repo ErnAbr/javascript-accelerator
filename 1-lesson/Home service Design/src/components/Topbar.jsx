@@ -3,17 +3,19 @@ import { Button } from "./Button";
 import styles from "../styles/Topbar.module.scss";
 import { IconContext } from "react-icons";
 import { Link, useNavigate } from "react-router-dom";
+import { routes } from "../navigation/routes";
+
+const navLinks = [
+  { name: "Home", path: routes.HOME },
+  { name: "Services", path: routes.SERVICES },
+  { name: "About Us", path: routes.ABOUT_US },
+];
 
 export function Topbar() {
   const navigate = useNavigate();
-  const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "Services", path: "/services" },
-    { name: "About Us", path: "/about-us" },
-  ];
 
   const onClick = () => {
-    navigate("/login");
+    navigate(routes.LOGIN);
   };
 
   return (

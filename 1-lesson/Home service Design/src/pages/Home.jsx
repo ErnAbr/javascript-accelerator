@@ -1,15 +1,18 @@
 import { Topbar } from "../components/Topbar";
 import { Search } from "../components/Search";
-import { Category } from "../components/Category";
-import { CardGrid } from "../components/CardGrid";
+import { SearchCategory } from "../components/SearchCategory";
+import { useLocation } from "react-router-dom";
 
 export const Home = () => {
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const category = params.get("category");
+
   return (
     <>
       <Topbar />
       <Search />
-      <Category />
-      <CardGrid />
+      <SearchCategory category={category} />
     </>
   );
 };

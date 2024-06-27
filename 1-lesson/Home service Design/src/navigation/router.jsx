@@ -5,21 +5,20 @@ import { AboutUs } from "../pages/AboutUs";
 import { Login } from "../pages/Login";
 import { Register } from "../pages/Register";
 import { NotFound } from "../pages/NotFound";
-import { SearchCategory } from "../pages/SearchCategory";
+import { routes } from "./routes";
 
-const routes = [
-  { path: "/", element: <Home /> },
-  { path: "/services", element: <Services /> },
-  { path: "/about-us", element: <AboutUs /> },
-  { path: "/login", element: <Login /> },
-  { path: "/register", element: <Register /> },
-  { path: "/search/:category", element: <SearchCategory /> },
+const routeObjects = [
+  { path: routes.HOME, element: <Home /> },
+  { path: routes.SERVICES, element: <Services /> },
+  { path: routes.ABOUT_US, element: <AboutUs /> },
+  { path: routes.LOGIN, element: <Login /> },
+  { path: routes.REGISTER, element: <Register /> },
   { path: "/not-found", element: <NotFound /> },
   { path: "*", element: <Navigate replace to="/not-found" /> },
 ];
 
 const router = createBrowserRouter(
-  routes.map((route) => ({
+  routeObjects.map((route) => ({
     path: route.path,
     element: route.element,
   }))

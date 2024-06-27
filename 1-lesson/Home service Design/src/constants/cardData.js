@@ -31,7 +31,7 @@ export const cardProps = [
   },
   {
     image: electrician,
-    serviceCategory: "Electrical",
+    serviceCategory: "Electric",
     serviceType: "Wiring",
     servicePersonName: "Michael Smith",
     serviceAddress: "789 Powerline Rd, Miami",

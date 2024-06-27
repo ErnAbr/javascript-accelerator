@@ -1,15 +1,8 @@
 import PropTypes from "prop-types";
-import { useNavigate } from "react-router-dom";
 import { Button } from "./Button";
 import styles from "../styles/Card.module.scss";
 
 export const Card = ({ image, serviceCategory, serviceType, servicePersonName, serviceAddress }) => {
-  const navigate = useNavigate();
-
-  const handleBooking = () => {
-    navigate(`/search/${serviceCategory.toLowerCase()}`);
-  };
-
   return (
     <>
       <div className={styles.card}>
@@ -23,10 +16,7 @@ export const Card = ({ image, serviceCategory, serviceType, servicePersonName, s
             <div className={styles.servicePersonName}>{servicePersonName}</div>
             <p>{serviceAddress}</p>
           </div>
-
-          <Button buttonType="primary" onClick={handleBooking}>
-            Book Now
-          </Button>
+          <Button buttonType="primary">Book Now</Button>
         </div>
       </div>
     </>
