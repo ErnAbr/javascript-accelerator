@@ -1,11 +1,12 @@
-import { Navigate, RouterProvider, createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom";
 import { Home } from "../pages/Home";
 import { Services } from "../pages/Services";
 import { AboutUs } from "../pages/AboutUs";
 import { Login } from "../pages/Login";
 import { Register } from "../pages/Register";
 import { NotFound } from "../pages/NotFound";
-import { routes } from "./routes";
+import { MainLayout } from "./MainLayout"; // Ensure the path is correct
+import { routes } from "./routes"; // Ensure the path is correct
 
 const routeObjects = [
   { path: routes.HOME, element: <Home /> },
@@ -17,12 +18,13 @@ const routeObjects = [
   { path: "*", element: <Navigate replace to="/not-found" /> },
 ];
 
-const router = createBrowserRouter(
-  routeObjects.map((route) => ({
-    path: route.path,
-    element: route.element,
-  }))
-);
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <MainLayout />,
+    children: routeObjects,
+  },
+]);
 
 export const Routes = () => {
   return <RouterProvider router={router} />;

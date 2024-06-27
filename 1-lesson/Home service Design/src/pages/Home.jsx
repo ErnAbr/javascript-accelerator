@@ -1,4 +1,3 @@
-import { Topbar } from "../components/Topbar";
 import { Search } from "../components/Search";
 import { SearchCategory } from "../components/SearchCategory";
 import { useLocation } from "react-router-dom";
@@ -10,7 +9,6 @@ export const Home = () => {
 
   return (
     <>
-      <Topbar />
       <Search />
       <SearchCategory category={category} />
     </>
