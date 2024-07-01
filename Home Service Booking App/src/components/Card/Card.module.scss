@@ -56,3 +56,23 @@ p {
   padding: 7px;
   border-radius: 25px;
 }
+
+.cardBottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heartIcon,
+.favCard {
+  cursor: pointer;
+  margin-top: 7px;
+  align-self: center;
+}
+
+.heartIcon {
+  color: rgba(0, 0, 0, 0.205);
+}
+
+.favCard {
+  color: red;
+}
