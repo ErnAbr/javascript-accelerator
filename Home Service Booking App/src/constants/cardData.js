@@ -9,6 +9,7 @@ import painting from "../img/painting.jpg";
 
 export const cardProps = [
   {
+    cardId: 1,
     image: cleaning,
     serviceCategory: "Cleaning",
     serviceType: "House Cleaning",
@@ -16,6 +17,7 @@ export const cardProps = [
     serviceAddress: "255 Grand Park Ave, New York",
   },
   {
+    cardId: 2,
     image: gardening,
     serviceCategory: "Cleaning",
     serviceType: "Lawn Mowing",
@@ -23,6 +25,7 @@ export const cardProps = [
     serviceAddress: "123 Green St, Los Angeles",
   },
   {
+    cardId: 3,
     image: plumbing,
     serviceCategory: "Plumbing",
     serviceType: "Leak Repair",
@@ -30,6 +33,7 @@ export const cardProps = [
     serviceAddress: "456 Waterway Dr, Chicago",
   },
   {
+    cardId: 4,
     image: electrician,
     serviceCategory: "Electric",
     serviceType: "Wiring",
@@ -37,6 +41,7 @@ export const cardProps = [
     serviceAddress: "789 Powerline Rd, Miami",
   },
   {
+    cardId: 5,
     image: babysitting,
     serviceCategory: "Repair",
     serviceType: "Child Care",
@@ -44,6 +49,7 @@ export const cardProps = [
     serviceAddress: "101 Main St, Houston",
   },
   {
+    cardId: 6,
     image: tutoring,
     serviceCategory: "Repair",
     serviceType: "Math Tutoring",
@@ -51,6 +57,7 @@ export const cardProps = [
     serviceAddress: "202 Study Ln, Boston",
   },
   {
+    cardId: 7,
     image: moving,
     serviceCategory: "Shifting",
     serviceType: "Furniture Moving",
@@ -58,6 +65,7 @@ export const cardProps = [
     serviceAddress: "303 Transit Ave, San Francisco",
   },
   {
+    cardId: 8,
     image: painting,
     serviceCategory: "Painting",
     serviceType: "House Painting",

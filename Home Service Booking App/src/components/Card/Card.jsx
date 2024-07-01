@@ -1,8 +1,9 @@
 import PropTypes from "prop-types";
-import { Button } from "./Button";
-import styles from "../styles/Card.module.scss";
+import { Button } from "../Button/Button";
+import styles from "./Card.module.scss";
 
-export const Card = ({ image, serviceCategory, serviceType, servicePersonName, serviceAddress }) => {
+export const Card = ({ image, serviceCategory, serviceType, servicePersonName, serviceAddress, cardId }) => {
+  console.log(cardId);
   return (
     <>
       <div className={styles.card}>
@@ -24,6 +25,7 @@ export const Card = ({ image, serviceCategory, serviceType, servicePersonName, s
 };
 
 Card.propTypes = {
+  cardId: PropTypes.number.isRequired,
   image: PropTypes.string.isRequired,
   serviceCategory: PropTypes.string.isRequired,
   serviceType: PropTypes.string.isRequired,

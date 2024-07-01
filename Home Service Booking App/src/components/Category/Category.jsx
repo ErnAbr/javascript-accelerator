@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Button } from "./Button";
-import styles from "../styles/Category.module.scss";
+import { Button } from "../Button/Button";
+import styles from "./Category.module.scss";
 import { MdOutlineCleaningServices, MdPlumbing, MdElectricBolt } from "react-icons/md";
 import { GiAutoRepair } from "react-icons/gi";
 import { PiPaintBrushHouseholdBold } from "react-icons/pi";

@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
-import { Card } from "./Card";
-import { cardProps } from "../constants/cardData";
-import styles from "../styles/CardGrid.module.scss";
+import { Card } from "../Card/Card";
+import { cardProps } from "../../constants/cardData";
+import styles from "./CardGrid.module.scss";
 
 export const CardGrid = ({ category }) => {
   const filteredItems = category

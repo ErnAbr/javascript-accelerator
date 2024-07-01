@@ -1,5 +1,5 @@
-import styles from "../styles/Search.module.scss";
-import { Button } from "./Button";
+import styles from "./Search.module.scss";
+import { Button } from "../Button/Button";
 import { HiSearch } from "react-icons/hi";
 import { IconContext } from "react-icons";
 import { useState } from "react";

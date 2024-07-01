@@ -1,9 +1,9 @@
 import { IoLogoTux } from "react-icons/io";
-import { Button } from "./Button";
-import styles from "../styles/Topbar.module.scss";
+import { Button } from "../Button/Button";
+import styles from "./Topbar.module.scss";
 import { IconContext } from "react-icons";
 import { Link, useNavigate } from "react-router-dom";
-import { routes } from "../navigation/routes";
+import { routes } from "../../navigation/routes";
 
 const navLinks = [
   { name: "Home", path: routes.HOME },

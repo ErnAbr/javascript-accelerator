@@ -1,5 +1,5 @@
-import { Search } from "../components/Search";
-import { SearchCategory } from "../components/SearchCategory";
+import { Search } from "../components/Search/Search";
+import { SearchCategory } from "../components/SearchCategory/SearchCategory";
 import { useLocation } from "react-router-dom";
 
 export const Home = () => {
